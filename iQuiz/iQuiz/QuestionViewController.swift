@@ -34,11 +34,18 @@ class QuestionViewController: UIViewController {
     func configQuestion() {
         titleQuestionLabel.text = questions[questionIndex].title
         
+        for btn in responseButtons {
+            let btnTitle = questions[questionIndex].answers[btn.tag]
+            btn.setTitle(btnTitle, for: .normal)
+        }
     }
     
     
     @IBAction func respondeButtonPressed(_ sender: UIButton) {
-        print(sender.tag)
+        let userAnsweredCorrectly = sender.tag == questions[questionIndex].correctAnswer        
+        if userAnsweredCorrectly {
+            score += 1
+        }
     }
     	
 
