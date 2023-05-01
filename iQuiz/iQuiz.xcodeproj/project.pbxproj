@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		853F86702A006EDE0069801C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853F866F2A006EDE0069801C /* Question.swift */; };
 		8541891729FF5228007C101E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8541891629FF5228007C101E /* AppDelegate.swift */; };
 		8541891929FF5228007C101E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8541891829FF5228007C101E /* SceneDelegate.swift */; };
 		8541891B29FF5228007C101E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8541891A29FF5228007C101E /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		853F866F2A006EDE0069801C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8541891329FF5228007C101E /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8541891629FF5228007C101E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8541891829FF5228007C101E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				8541892129FF522B007C101E /* LaunchScreen.storyboard */,
 				8541892429FF522B007C101E /* Info.plist */,
 				8541892A29FF5E99007C101E /* QuestionViewController.swift */,
+				853F866F2A006EDE0069801C /* Question.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				853F86702A006EDE0069801C /* Question.swift in Sources */,
 				8541891B29FF5228007C101E /* ViewController.swift in Sources */,
 				8541891729FF5228007C101E /* AppDelegate.swift in Sources */,
 				8541892B29FF5E99007C101E /* QuestionViewController.swift in Sources */,
