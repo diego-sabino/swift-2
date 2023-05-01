@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +24,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="3FD-Ss-4XS"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar Quiz">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
@@ -64,46 +63,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Título da Questão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRu-O4-VPs">
-                                <rect key="frame" x="88" y="231" width="255" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título da Questão" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjE-cX-vdq">
+                                <rect key="frame" x="64" y="215" width="302" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
-                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Vc-7d-mmG">
-                                <rect key="frame" x="150" y="412" width="131" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.45490196078431372" green="0.19607843137254902" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdk-w7-Rjb">
+                                <rect key="frame" x="64" y="420" width="302" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="x2M-1N-0gU"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Reposta 01">
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 02">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inl-4J-wSK">
-                                <rect key="frame" x="149" y="531" width="134" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76p-gp-usk">
+                                <rect key="frame" x="64" y="326" width="302" height="62"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="d3m-bT-hFI"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Reposta 02">
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTb-VH-x9G">
-                                <rect key="frame" x="147" y="657" width="134" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ct-sV-o5k">
+                                <rect key="frame" x="64" y="514" width="302" height="62"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="aie-yS-9cV"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Reposta 03">
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 03">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pwe-eK-jOC"/>
                         <color key="backgroundColor" red="0.32156862745098036" green="0.11764705882352941" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rdk-w7-Rjb" firstAttribute="top" secondItem="76p-gp-usk" secondAttribute="bottom" constant="32" id="5EB-3M-zMg"/>
+                            <constraint firstItem="0ct-sV-o5k" firstAttribute="leading" secondItem="pwe-eK-jOC" secondAttribute="leading" constant="64" id="9hu-oA-ezs"/>
+                            <constraint firstItem="76p-gp-usk" firstAttribute="leading" secondItem="pwe-eK-jOC" secondAttribute="leading" constant="64" id="DJt-mM-GEk"/>
+                            <constraint firstItem="Rdk-w7-Rjb" firstAttribute="leading" secondItem="pwe-eK-jOC" secondAttribute="leading" constant="64" id="Gz5-Hg-RBb"/>
+                            <constraint firstItem="pwe-eK-jOC" firstAttribute="trailing" secondItem="0ct-sV-o5k" secondAttribute="trailing" constant="64" id="SpM-z5-ySv"/>
+                            <constraint firstItem="pwe-eK-jOC" firstAttribute="trailing" secondItem="Rdk-w7-Rjb" secondAttribute="trailing" constant="64" id="ViY-dh-aAO"/>
+                            <constraint firstItem="pwe-eK-jOC" firstAttribute="trailing" secondItem="76p-gp-usk" secondAttribute="trailing" constant="64" id="WVs-f8-BdI"/>
+                            <constraint firstAttribute="trailing" secondItem="VjE-cX-vdq" secondAttribute="trailing" constant="64" id="cVV-df-krg"/>
+                            <constraint firstItem="76p-gp-usk" firstAttribute="top" secondItem="VjE-cX-vdq" secondAttribute="bottom" constant="72" id="nab-Hm-7ho"/>
+                            <constraint firstItem="VjE-cX-vdq" firstAttribute="top" secondItem="pwe-eK-jOC" secondAttribute="top" constant="112" id="owe-hW-rv9"/>
+                            <constraint firstItem="VjE-cX-vdq" firstAttribute="leading" secondItem="pwe-eK-jOC" secondAttribute="leading" constant="64" id="q1c-gD-xIn"/>
+                            <constraint firstItem="0ct-sV-o5k" firstAttribute="top" secondItem="Rdk-w7-Rjb" secondAttribute="bottom" constant="32" id="ray-3e-RNB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bDr-Sn-E8a"/>
                 </viewController>
@@ -132,11 +150,5 @@
     </scenes>
     <resources>
         <image name="Logo" width="217" height="104"/>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
