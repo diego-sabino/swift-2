@@ -37,15 +37,28 @@ class QuestionViewController: UIViewController {
         for btn in responseButtons {
             let btnTitle = questions[questionIndex].answers[btn.tag]
             btn.setTitle(btnTitle, for: .normal)
+            btn.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
         }
     }
     
     
     @IBAction func respondeButtonPressed(_ sender: UIButton) {
-        let userAnsweredCorrectly = sender.tag == questions[questionIndex].correctAnswer        
+        let userAnsweredCorrectly = sender.tag == questions[questionIndex].correctAnswer
+        
+        
         if userAnsweredCorrectly {
             score += 1
+            sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1.0)
+        } else {
+            sender.backgroundColor = UIColor(red: 211/255, green: 17/255, blue: 17/255, alpha: 1.0)
         }
+        
+        
+        if questionIndex < questions.count - 1 {
+            questionIndex += 1
+            configQuestion()
+        }
+        
     }
     	
 
