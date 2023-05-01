@@ -31,7 +31,7 @@ class QuestionViewController: UIViewController {
         }
     }
     
-    func configQuestion() {
+    @objc func configQuestion() {
         titleQuestionLabel.text = questions[questionIndex].title
         
         for btn in responseButtons {
@@ -48,6 +48,7 @@ class QuestionViewController: UIViewController {
         
         if userAnsweredCorrectly {
             score += 1
+ 
             sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1.0)
         } else {
             sender.backgroundColor = UIColor(red: 211/255, green: 17/255, blue: 17/255, alpha: 1.0)
@@ -56,7 +57,7 @@ class QuestionViewController: UIViewController {
         
         if questionIndex < questions.count - 1 {
             questionIndex += 1
-            configQuestion()
+            Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(configQuestion), userInfo: nil, repeats: false)
         }
         
     }
