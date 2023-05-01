@@ -30,6 +30,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar Quiz">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KZO-iO-8o2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -43,6 +46,9 @@
                             <constraint firstItem="b2Y-SN-2DY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sl4-YP-Cm2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonInitQuiz" destination="b2Y-SN-2DY" id="Ddx-Mb-oaJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

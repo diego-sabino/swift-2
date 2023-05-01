@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var buttonInitQuiz: UIButton!
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        print("The button was pressed!")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        configLayout()
     }
-
+    
+    func configLayout() {
+        buttonInitQuiz.layer.cornerRadius = 12.0
+    }
 
 }
 
