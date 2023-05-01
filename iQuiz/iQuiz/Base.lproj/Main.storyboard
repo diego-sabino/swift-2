@@ -134,7 +134,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bDr-Sn-E8a"/>
                     <connections>
-                        <outlet property="questionTitleLabel" destination="VjE-cX-vdq" id="dhM-RF-Z9k"/>
+                        <outlet property="titleQuestionLabel" destination="VjE-cX-vdq" id="dhM-RF-Z9k"/>
                         <outletCollection property="responseButtons" destination="76p-gp-usk" collectionClass="NSMutableArray" id="nQN-KV-olr"/>
                         <outletCollection property="responseButtons" destination="Rdk-w7-Rjb" collectionClass="NSMutableArray" id="5Wz-3h-6Ji"/>
                         <outletCollection property="responseButtons" destination="0ct-sV-o5k" collectionClass="NSMutableArray" id="HcG-6f-Gri"/>

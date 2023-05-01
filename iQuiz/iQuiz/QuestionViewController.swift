@@ -8,21 +8,32 @@
 import UIKit
 
 class QuestionViewController: UIViewController {
-    @IBOutlet var responseButtons: [UIButton]!
     
-    @IBOutlet weak var questionTitleLabel: UILabel!
+    var score = 0
+    var questionIndex = 0
+    
+    @IBOutlet var responseButtons: [UIButton]!
+    @IBOutlet weak var titleQuestionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configLayout()
-        // Do any additional setup after loading the view.
+        configQuestion()
     }
     
     func configLayout() {
         navigationItem.hidesBackButton = true
+        titleQuestionLabel.numberOfLines = 0
+        titleQuestionLabel.textAlignment = .center
         
         for btn in responseButtons {
             btn.layer.cornerRadius = 12.0
         }
+    }
+    
+    func configQuestion() {
+        titleQuestionLabel.text = questions[questionIndex].title
+        
     }
     
     
