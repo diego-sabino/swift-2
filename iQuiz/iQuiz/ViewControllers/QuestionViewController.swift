@@ -74,7 +74,7 @@ class QuestionViewController: UIViewController {
     }
     
     func navegateToPerformanceScreen() {
-        performSegue(withIdentifier: goToPerformanceScreen, sender: nil)
+        performSegue(withIdentifier: "goToPerformanceScreen", sender: nil)
     }
     	
 
