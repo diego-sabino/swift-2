@@ -15,6 +15,7 @@
 		8541892029FF522B007C101E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8541891F29FF522B007C101E /* Assets.xcassets */; };
 		8541892329FF522B007C101E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8541892129FF522B007C101E /* LaunchScreen.storyboard */; };
 		8541892B29FF5E99007C101E /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8541892A29FF5E99007C101E /* QuestionViewController.swift */; };
+		8577FDC52A01C9C10071EB3C /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8577FDC42A01C9C10071EB3C /* PerformanceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8541892229FF522B007C101E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8541892429FF522B007C101E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8541892A29FF5E99007C101E /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		8577FDC42A01C9C10071EB3C /* PerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				8541892429FF522B007C101E /* Info.plist */,
 				8541892A29FF5E99007C101E /* QuestionViewController.swift */,
 				853F866F2A006EDE0069801C /* Question.swift */,
+				8577FDC42A01C9C10071EB3C /* PerformanceViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				8541891729FF5228007C101E /* AppDelegate.swift in Sources */,
 				8541892B29FF5E99007C101E /* QuestionViewController.swift in Sources */,
 				8541891929FF5228007C101E /* SceneDelegate.swift in Sources */,
+				8577FDC52A01C9C10071EB3C /* PerformanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
