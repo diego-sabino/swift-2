@@ -9,10 +9,23 @@ import UIKit
 
 class PerformanceViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    
+    @IBOutlet weak var percentageLabel: UILabel!
+    
+    
+    @IBOutlet weak var btnResetQuiz: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configLayout()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func configLayout() {
+        btnResetQuiz.layer.cornerRadius = 12.0
     }
     
 
