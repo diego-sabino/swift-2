@@ -138,40 +138,41 @@
                         <outletCollection property="responseButtons" destination="76p-gp-usk" collectionClass="NSMutableArray" id="nQN-KV-olr"/>
                         <outletCollection property="responseButtons" destination="Rdk-w7-Rjb" collectionClass="NSMutableArray" id="5Wz-3h-6Ji"/>
                         <outletCollection property="responseButtons" destination="0ct-sV-o5k" collectionClass="NSMutableArray" id="HcG-6f-Gri"/>
+                        <segue destination="OMr-ye-kwu" kind="show" identifier="goToPerformanceScreen" id="w9m-ta-OER"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYC-xU-CP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="-28"/>
+            <point key="canvasLocation" x="1751" y="-30"/>
         </scene>
         <!--Performance View Controller-->
         <scene sceneID="dAO-G2-CI9">
             <objects>
                 <viewController id="OMr-ye-kwu" customClass="PerformanceViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vSO-se-DcQ">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você finalizou o iQuiz!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdx-cz-38B">
-                                <rect key="frame" x="64" y="171" width="302" height="76.666666666666686"/>
+                                <rect key="frame" x="64" y="112" width="302" height="76.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você acertou 2 de 10 questões" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU2-eV-4pv">
-                                <rect key="frame" x="64" y="319.66666666666669" width="302" height="76.666666666666686"/>
+                                <rect key="frame" x="64" y="260.66666666666669" width="302" height="76.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentual final: 20%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpv-SL-DY6">
-                                <rect key="frame" x="64" y="468.33333333333331" width="302" height="32"/>
+                                <rect key="frame" x="64" y="409.33333333333331" width="302" height="32"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4X-JE-qsp">
-                                <rect key="frame" x="64" y="572.33333333333337" width="302" height="62"/>
+                                <rect key="frame" x="64" y="513.33333333333337" width="302" height="62"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="PHz-ZB-HaC"/>
@@ -203,6 +204,7 @@
                             <constraint firstItem="uaq-ZW-rDH" firstAttribute="trailing" secondItem="M4X-JE-qsp" secondAttribute="trailing" constant="64" id="w4y-tG-dM4"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="eeL-cV-rzQ"/>
                     <connections>
                         <outlet property="btnResetQuiz" destination="M4X-JE-qsp" id="3VH-kH-crh"/>
                         <outlet property="percentageLabel" destination="Dpv-SL-DY6" id="jZ0-9I-PUM"/>
@@ -233,6 +235,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="w9m-ta-OER"/>
         <segue reference="OEh-qm-L1w"/>
     </inferredMetricsTieBreakers>
     <resources>

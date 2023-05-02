@@ -41,6 +41,15 @@ class QuestionViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let performanceVC = segue.destination as? PerformanceViewController
+        else {
+            return
+        }
+        performanceVC.score = score
+
+    }
+    
     
     @IBAction func respondeButtonPressed(_ sender: UIButton) {
         let userAnsweredCorrectly = sender.tag == questions[questionIndex].correctAnswer
@@ -58,8 +67,14 @@ class QuestionViewController: UIViewController {
         if questionIndex < questions.count - 1 {
             questionIndex += 1
             Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(configQuestion), userInfo: nil, repeats: false)
+        } else {
+            navegateToPerformanceScreen()
         }
         
+    }
+    
+    func navegateToPerformanceScreen() {
+        performSegue(withIdentifier: goToPerformanceScreen, sender: nil)
     }
     	
 
